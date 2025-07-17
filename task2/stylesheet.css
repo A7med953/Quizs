@@ -1,0 +1,64 @@
+.main-title{
+    text-align: center;
+}
+.main-title h1{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+}
+.diamond {
+    width: 10px;
+    height: 10px;
+    background-color: #30bbb2;
+    transform: rotate(45deg);
+    display: inline-block;
+}
+.card-container{
+    display: flex;
+    justify-content: center;   
+    flex-wrap: wrap;          
+}
+.cards {
+    border: 1px solid rgb(233, 230, 230);
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    width: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.image{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.data{
+    margin-right: 10px;
+    color: #30bbb2
+}
+.data,.owner{
+    float: left;
+}
+.info h3{
+    padding-top: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 200;
+}
+.info p{
+    color: rgb(169, 167, 167);
+}
+.btn{
+        text-align: center;
+}
+.btn a{
+    text-decoration: none;                 
+    border-radius: 15px;
+    background-color: #30bbb2;
+    padding: 10px;
+    font-size: 14px;                 
+    color: white;                   
+    cursor: pointer; 
+    font-family: 'Dancing Script', cursive; 
+}
+
+.btn a:hover{
+    background-color:#69d2cb ;
+}
