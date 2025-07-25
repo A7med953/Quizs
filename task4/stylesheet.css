@@ -1,0 +1,74 @@
+section {
+  text-align: center;
+}
+.mina-title {
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.mina-title ::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #000;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  border-radius: 1px;
+}
+.mina-par {
+  font-size: 16px;
+  color: #777;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.card {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card-img {
+
+  overflow: hidden;
+}
+.card-img img {
+      width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 50%; 
+  }
+
+  .mina-title {
+    font-size: 26px;
+  }
+
+  .mina-par {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+}
