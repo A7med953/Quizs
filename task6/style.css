@@ -1,0 +1,419 @@
+* {
+font-family: "Kalam", cursive;
+}
+
+body::-webkit-scrollbar {
+  width: 15px; 
+
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 10px;
+}
+
+
+ 
+header .icons-one i{
+color: orange;
+}
+
+nav.navbar {
+  background-color: rgba(0, 0, 0, .5); 
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  backdrop-filter: blur(2px); 
+}
+
+.carousel {
+  position: relative;
+  top: -80px;
+  z-index: 0;
+}
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel-caption h5{
+  font-size: 50px;
+}
+.carousel-caption p{
+  font-size: 30px;
+  margin-top: 20px;
+}
+.carousel-caption a{
+  border: 1px solid orange;
+  border-width: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: orange;
+}
+/* start card */
+
+.brand .card{
+  width: 100%;
+  border: none!important;
+}
+.brand .card {
+  border: none !important;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.brand .card::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: orange;
+  transition: width 0.3s ease;
+}
+
+.brand .card:hover::after {
+  width: 100%;
+}
+
+.brand.card img {
+  opacity: 0.5;
+}
+
+.brand .card img:hover {
+  opacity: 1;
+}
+
+
+.brand .card:hover::after {
+  width: 100%;
+}
+
+.brand .card img{
+  opacity: 0.5;
+}
+.brand .card img:hover{
+  opacity: 1;
+}
+/* end card */
+/* start offer */
+
+
+
+
+.offer .right{
+ padding-left: 40px;
+ margin-bottom: 20px;
+}
+.offer h3{
+  color: #717171;
+  font-size: 40px;
+  font-weight:400 ;
+}
+.right p{
+  color: #717171;
+  font-size: 20px;
+}
+.right p::before {
+  content: "➜ ";
+  color: #717171;
+  font-size: 20px;  
+  margin-right: 8px; 
+}
+.offer a {
+
+  border: 1px solid orange;
+  border-width: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: orange;
+}
+.offer-box {
+  position: relative;
+}
+
+.offer-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.offer-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  background-color: rgba(255, 102, 0, 0.75); 
+  color: #fff;
+  text-align: center;
+}
+
+.offer-text.dark {
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+/* end offer  */
+/* start food  */
+.food img{
+  height: 500px;
+}
+.food-cards {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-item {
+  transition: transform 0.5s, z-index 0.5s;
+  transform-origin: center;
+  position: relative;
+  z-index: 1;
+}
+
+.card-item .card-inner {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease-in-out;
+}
+.image-text {
+  color: white;
+  align-self:end;
+}
+.image-text h3{
+  font-size: 40px;
+  font-weight: 400;
+}
+.image-text p{
+    font-size: 20px;
+  font-weight: 300;
+}
+.image-text a{
+    border: 1px solid orange;
+  border-width: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: orange;
+}
+
+.card-item .image-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.card-item:hover .image-text {
+  opacity: 1;
+}
+
+.food-cards:hover .card-item:not(:hover) {
+  transform: scale(0.9) rotateY(15deg);
+  z-index: 0;
+}
+
+.card-item:hover {
+  transform: scale(1.1) rotateY(0deg);
+  z-index: 10;
+}
+/* end food */
+/* start review */
+.review {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.review .card {
+  border-radius: 10px;
+}
+.review .text-review  {
+  padding-bottom: 80px;
+}
+.review .card-body img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.carousel-inner,
+.carousel-item {
+  height: auto;
+}
+
+.carousel-custom-icon i {
+  color: orange;
+  font-size: 24px;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-custom-icon {
+  color: orange;
+  font-size: 2rem;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end .review */
+/* start menu */
+section.menu {
+  overflow-x: hidden;
+}
+
+.menu .card{
+  border: none;
+  border-radius: 0;
+
+  
+}
+.menu .card img{
+  border-radius: 0;
+}
+.menu .card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu .card img  {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu .card:hover .img-overlay {
+  opacity: 1;
+}
+/* end menu */
+/* start poster */
+.poster {
+  background-image: url("image/imgi_28_book.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px; 
+}
+.poster-text{
+padding: 25px 0;
+}
+.poster-text h2{
+  color: orange;
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.poster-text p{
+
+font-size: 20px;
+font-weight: 300;
+line-height: 15px;
+margin-bottom: 20px;
+
+}
+.poster-text a{
+  border: 1px solid orange;
+  border-width: 15px;
+  text-decoration: none;
+  color: white;
+  background-color: orange;
+} 
+/* end poster */
+/* start ask */
+.ask{
+  background-color: orange;
+  min-height: 200px;
+}
+.info-ask{
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+.ask-text{
+  padding-right: 15px;
+  color: white;
+
+}
+.ask-input input{
+background-color: #9f5300;
+border: none;
+}
+.ask-input button{
+  background-color: white ;
+  color: orange;
+  border: none;
+  padding: 10px ;
+}
+.ask-input button:hover{
+background-color: #9f5300;
+color: white;
+}
+/* end ask  */
+/* start about */
+.about{
+  background-color: #9f5300;
+}
+.about h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.about p {
+  font-size: 15px;
+  color: #ccc;
+}
+
+.about i {
+  color:orange;
+}
+.insta-img {
+  width: 100%;
+  height: 100px; 
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* end about */
+footer{
+  background-color: #472706;
+  color: white;
+  height: 40px;
+  text-align: center;
+}
